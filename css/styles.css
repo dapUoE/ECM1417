@@ -1,0 +1,24 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    padding: 0.5rem;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#main {
+    background-image: url('arcade-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

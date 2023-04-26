@@ -3,23 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Welcome to Pairs</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#" name="home">Home</a></li>
-                <li><a href="#" name="memory">Play Pairs</a></li>
-                <li><a href="#" name="register">Register</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#" name="home">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" name="memory">Play Pairs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" name="register">Register</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <div id="main">
-        <h1>Welcome to Pairs</h1>
-        <p>You're not using a registered session? <a href="#" name="register">Register now</a></p>
-        <button><a href="#" name="play">Click here to play</a></button>
+    <div id="main" class="container text-center">
+        <h1 class="display-4 text-white mt-5">Welcome to Pairs</h1>
+        <p class="lead text-white">You're not using a registered session? <a href="#" name="register">Register now</a></p>
+        <button class="btn btn-primary"><a href="#" name="play" class="text-white">Click here to play</a></button>
     </div>
     <script src="scripts.js"></script>
 </body>

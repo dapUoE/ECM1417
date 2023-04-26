@@ -8,31 +8,9 @@ body {
     font-family: Verdana, sans-serif;
 }
 
-header {
-    background-color: blue;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
 nav a {
     font-size: 12px;
     font-weight: bold;
-    color: white;
-    text-decoration: none;
 }
 
 nav a:hover {
@@ -77,5 +55,5 @@ nav a:hover {
 }
 
 #main button:hover {
-    background-color: darkblue;
+background-color: darkblue;
 }

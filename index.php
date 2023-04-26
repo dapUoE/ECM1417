@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Pairs</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Welcome to Pairs</title>
 </head>
 <body>
     <header>
-        <?php include 'navbar.php'; ?>
+        <nav>
+            <ul>
+                <li><a href="#" name="home">Home</a></li>
+                <li><a href="#" name="memory">Play Pairs</a></li>
+                <li><a href="#" name="register">Register</a></li>
+            </ul>
+        </nav>
     </header>
     <div id="main">
-        <?php if (isset($_SESSION['registered']) && $_SESSION['registered']): ?>
-            <h1>Welcome to Pairs</h1>
-            <button onclick="location.href='pairs.php'">Click here to play</button>
-        <?php else: ?>
-            <p>You're not using a registered session? <a href="registration.php">Register now</a></p>
-        <?php endif; ?>
+        <h1>Welcome to Pairs</h1>
+        <p>You're not using a registered session? <a href="#" name="register">Register now</a></p>
+        <button><a href="#" name="play">Click here to play</a></button>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
